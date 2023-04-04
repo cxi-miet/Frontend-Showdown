@@ -1,24 +1,24 @@
 #Rules {
-  // background: linear-gradient(
-  //   10.6deg,
-  //   rgba(0, 0, 0, 0.93) 11.2%,
-  //   rgb(0, 76, 189) 78.9%
-  // );
-  background: url(../assets/time-bg.png);
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 1500px;
-    height: 1500px;
-    border-radius: 50%;
-    background: #004cbd;
-    transform: translate(-50%, -30%);
-    z-index: 0;
-    filter: blur(200px);
-    opacity: 70%;
-  }
+  background: linear-gradient(
+    10.6deg,
+    rgba(0, 0, 0, 0.93) 11.2%,
+    rgba(0, 76, 189,.7) 78.9%
+  );
+  // background: url(../assets/time-bg.png);
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 1500px;
+  //   height: 1500px;
+  //   border-radius: 50%;
+  //   background: #004cbd;
+  //   transform: translate(-50%, -30%);
+  //   z-index: 0;
+  //   filter: blur(200px);
+  //   opacity: 70%;
+  // }
   position: relative;
   display: flex;
   justify-content: center;

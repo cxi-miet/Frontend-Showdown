@@ -18,13 +18,9 @@
     filter: blur(200px);
     opacity: 60%;
   }
-  .team_heading h1 {
-    width: 150px;
-    height: 60px;
-  }
   .Faculty h1,
   .student h1 {
-    width: 500px;
+    width: 100%;
     margin: 20px auto;
   }
   .faculty_container,
@@ -122,13 +118,18 @@
   }
 }
 @keyframes float {
-
   0%,
   100% {
-      transform: translateY(-20px);
+    transform: translateY(-20px);
   }
 
   50% {
-      transform: translateY(20px);
+    transform: translateY(20px);
   }
 }
+
+// @media (max-width: 375px) {
+//   #About-us {
+    
+//   }
+// }

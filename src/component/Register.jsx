@@ -31,7 +31,7 @@ function Register() {
   const Round1Files ="#";
   const Round2Files ="#";
   return (
-    <div className="w-full flex justify-center items-center gap-20" id="Register">
+    <div className="w-full flex justify-center items-center gap-20 flex-wrap" id="Register">
       
       <Timer
         timerDays={timerDays}

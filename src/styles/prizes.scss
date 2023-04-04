@@ -2,21 +2,27 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url(../assets/time-bg.png);
-  &::before {
-    content: "";
-    position: absolute;
-    top: -350px;
-    right: 0px;
-    width: 1000px;
-    height: 1000px;
-    background: #004cbd;
-    // transform: translate(50%, -50%);
-    z-index: 0;
-    filter: blur(120px);
-    border-radius:  50% 0 0 50% ;
-    opacity: 80%;
-  }
+  // background: url(../assets/time-bg.png);
+  overflow: hidden;
+  background: linear-gradient(
+    170.6deg,
+    rgba(0, 0, 0, 0.93) 11.2%,
+    rgba(0, 76, 189,.7) 78.9%
+  );
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: -350px;
+  //   right: 0px;
+  //   width: 1000px;
+  //   height: 1000px;
+  //   background: #004cbd;
+  //   // transform: translate(50%, -50%);
+  //   z-index: 0;
+  //   filter: blur(120px);
+  //   border-radius:  50% 0 0 50% ;
+  //   opacity: 80%;
+  // }
 
   padding-bottom: 20px;
   color: #fff;

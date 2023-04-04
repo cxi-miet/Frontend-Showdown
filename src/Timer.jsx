@@ -5,7 +5,7 @@ function Timer(props) {
   return (
     <div className="text-white" id="timer">
       <div className="timer-container flex flex-col gap-5 justify-center items-center ">
-        <h2 className="text-white text-3xl bg-transparent uppercase">{props.timerHeading}</h2>
+        <h2 className="text-white timer-heading bg-transparent uppercase">{props.timerHeading}</h2>
           <div className="timer flex justify-center items-center gap-10">
             <div className="Days">
               <p>{props.timerDays}</p>
