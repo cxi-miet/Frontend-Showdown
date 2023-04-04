@@ -1,0 +1,49 @@
+#Prizes {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url(../assets/time-bg.png);
+  &::before {
+    content: "";
+    position: absolute;
+    top: -350px;
+    right: 0px;
+    width: 1000px;
+    height: 1000px;
+    background: #004cbd;
+    // transform: translate(50%, -50%);
+    z-index: 0;
+    filter: blur(120px);
+    border-radius:  50% 0 0 50% ;
+    opacity: 80%;
+  }
+
+  padding-bottom: 20px;
+  color: #fff;
+  > .prizes-text {
+    width: 600px;
+  }
+  > .prizes-card {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    > .prizes-element {
+      position: relative;
+      min-width: 380px;
+      min-height: 100px;
+      z-index: 1;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.19);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(15.2px);
+      -webkit-backdrop-filter: blur(15.2px);
+    }
+  }
+}

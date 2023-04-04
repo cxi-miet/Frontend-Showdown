@@ -1,0 +1,76 @@
+#header {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: url(../assets/time-bg.png);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1500px;
+    height: 1500px;
+    border-radius: 50%;
+    background: #004cbd;
+    transform: translate(50%, -65%);
+    z-index: 0;
+    filter: blur(150px);
+    opacity: 70%;
+  }
+  > .header-container {
+    min-height: 100vh;
+    width: 100%;
+    background: transparent;
+    z-index: 10;
+
+    > .header-text {
+      width: 500px;
+      color: #fff;
+      > .frontend-text {
+        font-weight: 600;
+        background: -webkit-linear-gradient(-90deg, #fff, #8b8b8b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      > .Showdown-text {
+        font-weight: 600;
+        background: -webkit-linear-gradient(45deg, #006ce9, #8694e5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      > .context-text {
+        font-size: 0.7rem;
+        color: #fff;
+        opacity: 70%;
+      }
+      > .header-btn {
+        > button {
+          width: 175px;
+          height: 57px;
+          transition: 0.5s;
+          font-size: 17px;
+          border: none;
+          color: #fff;
+          border-radius: 40px;
+          background: rgb(0, 108, 233);
+          background: linear-gradient(
+            90deg,
+            rgba(0, 108, 233, 0.5592830882352942) 0%,
+            rgba(134, 148, 229, 1) 100%
+          );
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(15.6px);
+          -webkit-backdrop-filter: blur(15.6px);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1076px) {
+  #header {
+    > .header-container {
+        margin-top: 120px;
+    }
+  }
+}
