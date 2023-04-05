@@ -14,56 +14,59 @@ function Timeline() {
         <div class="timeline-items bg-transparent">
           <div class="timeline-item bg-transparent">
             <div class="timeline-dot"></div>
-            <div class="timeline-date bg-transparent">5 april - 9 april</div>
+            <div class="timeline-date bg-transparent">
+              7 April 2023 - 21 April 2023
+            </div>
             <div class="timeline-content bg-transparent">
-              <h3 className="bg-transparent">Registration</h3>
+              <h3 className="bg-transparent">Entering Showdown</h3>
               <p className="bg-transparent">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                Enter Frontend Showdown, one of biggest competitive contest by
+                registering here. Registrations start from 7 April to 21 April.
               </p>
             </div>
           </div>
           <div class="timeline-item bg-transparent">
             <div class="timeline-dot"></div>
-            <div class="timeline-date bg-transparent">9 april</div>
+            <div class="timeline-date bg-transparent">23 April 2023</div>
             <div class="timeline-content bg-transparent">
-              <h3 className="bg-transparent">Round 1</h3>
+              <h3 className="bg-transparent">Phase 1</h3>
               <p className="bg-transparent">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                Participate in Frontend Showdown on 23 April, design and code a
+                landing page in 6 hours.
               </p>
             </div>
           </div>
           <div class="timeline-item bg-transparent">
             <div class="timeline-dot"></div>
-            <div class="timeline-date bg-transparent">13 april</div>
+            <div class="timeline-date bg-transparent">27 April 2023</div>
             <div class="timeline-content bg-transparent">
-              <h3 className="bg-transparent">Round 1 winner announce</h3>
-              <p className="bg-transparent"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+              <h3 className="bg-transparent">Result Declaration: Phase 1</h3>
+              <p className="bg-transparent">
+                Announcement of shortlisted participants will be done for phase
+                2.
               </p>
             </div>
           </div>
           <div class="timeline-item bg-transparent">
             <div class="timeline-dot"></div>
-            <div class="timeline-date bg-transparent">16 april</div>
+            <div class="timeline-date bg-transparent">29 April 2023</div>
             <div class="timeline-content bg-transparent">
-              <h3 className="bg-transparent">Round 2</h3>
+              <h3 className="bg-transparent">Phase 2</h3>
               <p className="bg-transparent">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                Phase 2 will start on Saturday, 29 April at 6:00 pm sharp and
+                will be continue for next 24 hours, only shortlisted
+                participants can compete.
               </p>
             </div>
           </div>
           <div class="timeline-item bg-transparent">
             <div class="timeline-dot"></div>
-            <div class="timeline-date bg-transparent">X april</div>
+            <div class="timeline-date bg-transparent">Soon After Phase 2</div>
             <div class="timeline-content bg-transparent">
-              <h3 className="bg-transparent">Winner Announce</h3>
+              <h3 className="bg-transparent">Final Result Declaration</h3>
               <p className="bg-transparent">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+                Results will be announced with the final leaderboard that will
+                be declared.
               </p>
             </div>
           </div>

@@ -20,7 +20,8 @@ function Rules() {
           <div href="#" class="ag-courses-item_link bg-transparent">
             <div class="ag-courses-item_bg"></div>
             <div class="ag-courses-item_title bg-transparent">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, inventore.
+              You are allowed to use HTML,CSS and JavaScript according to your
+              convinience.
             </div>
           </div>
         </div>
@@ -28,7 +29,7 @@ function Rules() {
           <div href="#" class="ag-courses-item_link bg-transparent">
             <div class="ag-courses-item_bg"></div>
             <div class="ag-courses-item_title bg-transparent">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, inventore.
+              Use of any framework and libraries are prohibited.
             </div>
           </div>
         </div>
@@ -36,7 +37,8 @@ function Rules() {
           <div href="#" class="ag-courses-item_link bg-transparent">
             <div class="ag-courses-item_bg"></div>
             <div class="ag-courses-item_title bg-transparent">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, inventore.
+              Any external resources ( images, cdn links & text) are NOT
+              allowed.
             </div>
           </div>
         </div>
@@ -44,7 +46,7 @@ function Rules() {
           <div href="#" class="ag-courses-item_link bg-transparent">
             <div class="ag-courses-item_bg"></div>
             <div class="ag-courses-item_title bg-transparent">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, inventore.
+              Duplicate and copied work may lead to eliminations.
             </div>
           </div>
         </div>
@@ -52,7 +54,7 @@ function Rules() {
           <div href="#" class="ag-courses-item_link bg-transparent">
             <div class="ag-courses-item_bg"></div>
             <div class="ag-courses-item_title bg-transparent">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, inventore.
+              AI generated content/code are prohibited.
             </div>
           </div>
         </div>
@@ -60,7 +62,8 @@ function Rules() {
           <div href="#" class="ag-courses-item_link bg-transparent">
             <div class="ag-courses-item_bg"></div>
             <div class="ag-courses-item_title bg-transparent">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, inventore.
+              Submissions must be done in given interval of time and follow all
+              given instructions.
             </div>
           </div>
         </div>
@@ -72,7 +75,8 @@ function Rules() {
           <div href="#" class="ag-courses-item_link bg-transparent">
             <div class="ag-courses-item_bg"></div>
             <div class="ag-courses-item_title bg-transparent">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, inventore.
+              You are allowed to use HTML,CSS and JavaScript according to your
+              convinience.
             </div>
           </div>
         </div>
@@ -80,7 +84,7 @@ function Rules() {
           <div href="#" class="ag-courses-item_link bg-transparent">
             <div class="ag-courses-item_bg"></div>
             <div class="ag-courses-item_title bg-transparent">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, inventore.
+              Use of any framework and libraries are allowed.
             </div>
           </div>
         </div>
@@ -88,7 +92,7 @@ function Rules() {
           <div href="#" class="ag-courses-item_link bg-transparent">
             <div class="ag-courses-item_bg"></div>
             <div class="ag-courses-item_title bg-transparent">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, inventore.
+              Any external resources ( images, cdn links & text) are allowed.
             </div>
           </div>
         </div>
@@ -96,7 +100,8 @@ function Rules() {
           <div href="#" class="ag-courses-item_link bg-transparent">
             <div class="ag-courses-item_bg"></div>
             <div class="ag-courses-item_title bg-transparent">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, inventore.
+              Submissions must be done in given interval of time and follow all
+              given instructions.
             </div>
           </div>
         </div>
@@ -104,7 +109,7 @@ function Rules() {
           <div href="#" class="ag-courses-item_link bg-transparent">
             <div class="ag-courses-item_bg"></div>
             <div class="ag-courses-item_title bg-transparent">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, inventore.
+              AI generated content/code are prohibited.
             </div>
           </div>
         </div>
@@ -112,7 +117,7 @@ function Rules() {
           <div href="#" class="ag-courses-item_link bg-transparent">
             <div class="ag-courses-item_bg"></div>
             <div class="ag-courses-item_title bg-transparent">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, inventore.
+            Duplicate and copied work may lead to eliminations.
             </div>
           </div>
         </div>
