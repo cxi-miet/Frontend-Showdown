@@ -16,8 +16,7 @@ function Header() {
           <h1 className="text-6xl Showdown-text">Showdown</h1>
           <p className="bg-transparent context-text mt-2">
             One of biggest competitive activity , providing an opportunity to
-            showcase your skills and grow with us. Participate to get a chance
-            to win upto Rs 5000.
+            showcase your skills and grow with us.
           </p>
           <div className="header-btn bg-transparent mt-3">
             <button>
