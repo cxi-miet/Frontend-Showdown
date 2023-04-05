@@ -4,7 +4,6 @@ import "../styles/header.scss";
 import figma from "../assets/figma-logo.png"
 import html from "../assets/html-logo.png"
 import css from "../assets/css-logo.png"
-// import react from "../assets/react.png"
 import js from "../assets/javascript-logo.png"
 import image from "../assets/header-img.png"
 

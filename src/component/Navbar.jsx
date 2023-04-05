@@ -8,17 +8,29 @@ import "../styles/navbar.scss";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
 
   return (
     <div
       className="w-full fixed top-0 left-0 z-50 text-white bg-transparent"
       id="navbar"
-
     >
-      <div className="md:flex items-center justify-between  py-4 md:px-10 px-7 bg-transparent navbar-container">
+      <div
+        className={`md:flex items-center justify-between  py-4 md:px-10 px-7 bg-transparent navbar-container ${
+          colorChange ? "nav_scroll" : null
+        }`}
+      >
         <div className="flex items-center font-bold text-2xl cursor-pointer text-white uppercase bg-transparent">
           <HashLink className="bg-transparent" to={"/#header"}>
-            <img className="w-20 h-20 bg-transparent" src={logo} alt="Fs"/>
+            <img className="w-20 h-20 bg-transparent" src={logo} alt="Fs" />
           </HashLink>
         </div>
         <div
@@ -52,11 +64,21 @@ function Navbar() {
             </HashLink>
           </li>
           <li className="md:ml-8 text-xl md:my-0 my-7 bg-transparent">
+            <HashLink className="text-white bg-transparent" to={"/#Timeline"}>
+              Timeline
+            </HashLink>
+          </li>
+          <li className="md:ml-8 text-xl md:my-0 my-7 bg-transparent">
             <HashLink className="text-white bg-transparent" to={"/#FAQ"}>
               FAQ
             </HashLink>
           </li>
-          <button>
+          <button className=" btn2 md:hidden block">
+            <span>Register Now</span>
+            <i></i>
+          </button>
+
+          <button className="md:ml-5 hidden md:block btn1">
             <span className="bg-transparent">
               <HashLink className="bg-transparent" to={"/#products"}>
                 Register Now

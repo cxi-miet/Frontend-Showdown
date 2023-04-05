@@ -1,5 +1,6 @@
 {
   "name": "frontendshowdown",
+  "homepage": "https://cxi-miet.github.io/Frontend-Showdown",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +14,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
     "flowbite": "^1.6.4",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-countdown": "^2.3.5",
@@ -28,6 +30,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

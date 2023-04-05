@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/prizes.scss";
-import { GiCrenelCrown } from "react-icons/gi";
+import { GiPodiumWinner } from "react-icons/gi";
+import { BsStars } from "react-icons/bs";
 
 function Prizes() {
   return (
@@ -15,25 +16,20 @@ function Prizes() {
           In addition to the main leaderboard, there’s lots of bling to win at
           Frontend Showdown!
         </p>
-        <p className="text-white bg-transparent text-xl">
-          Certificates for all eligible participants
-        </p>
       </div>
-      <div className="prizes-card bg-transparent z-10">
-        <div className="prizes-element flex justify-center gap-5">
-          <GiCrenelCrown className="bg-transparent text-3xl" /> Rs xxx
-        </div>
-        <div className="prizes-element flex justify-center gap-5">
-          <GiCrenelCrown className="bg-transparent text-3xl" /> Rs xxx
-        </div>
-        <div className="prizes-element flex justify-center gap-5">
-          <GiCrenelCrown className="bg-transparent text-3xl" /> Rs xxx
-        </div>
-        <div className="prizes-element flex justify-center gap-5">
-          <GiCrenelCrown className="bg-transparent text-3xl" /> Rs xxx
-        </div>
-        <div className="prizes-element flex justify-center gap-5">
-          <GiCrenelCrown className="bg-transparent text-3xl" /> Rs xxx
+      <div className="canvas bg-transparent">
+        <div className="flip-card bg-transparent">
+          <div className="flip-card-content bg-transparent">
+            <div className="flip-card-front ">
+              <GiPodiumWinner className="bg-transparent text-white text-9xl" />
+              <p className="text-4xl text-white bg-transparent">Winners</p>
+            </div>
+            <div className="flip-card-back card">
+              <h1 className="bg-transparent text-white text-3xl p-4 flex justify-center gap-1  capitalize"><BsStars className="bg-transparent text-3xl "/> Winners get opportunity of internship at startups.</h1>
+              <h1 className="bg-transparent text-white text-3xl p-4 flex justify-center gap-1  capitalize"><BsStars className="bg-transparent text-3xl "/> Selected participants get momento with certificates.</h1>
+              <h1 className="bg-transparent text-white text-3xl p-4 flex justify-center gap-1  capitalize"><BsStars className="bg-transparent text-3xl "/> 100% Certification for ALL eligible participants</h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ function Register() {
   const [timerHours, setTimerHours] = useState();
   const [timerMinutes, setTimerMinutes] = useState();
   const [timerSeconds, setTimerSeconds] = useState();
-  var round1Time = "9 April 2023 11:00:00";
+  var round1Time = "21 April 2023 11:00:00";
   const countDate = new Date(round1Time).getTime();
   var x = setInterval(function () {
     let now = new Date().getTime();
