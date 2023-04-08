@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Frontend-Showdown/static/css/main.db3e643a.css",
-    "main.js": "/Frontend-Showdown/static/js/main.8dcf06c1.js",
+    "main.css": "/Frontend-Showdown/static/css/main.57795a9f.css",
+    "main.js": "/Frontend-Showdown/static/js/main.d7d11eb3.js",
     "static/media/Aryan.jpg": "/Frontend-Showdown/static/media/Aryan.e4610fc857af2dbf2279.jpg",
     "static/media/Dev.png": "/Frontend-Showdown/static/media/Dev.6bb6309b33f13e9cb03a.png",
     "static/media/header-img.png": "/Frontend-Showdown/static/media/header-img.a167f63e506a1518672f.png",
@@ -14,11 +14,11 @@
     "static/media/Shashwat-sir.jpeg": "/Frontend-Showdown/static/media/Shashwat-sir.97371ee981e401a7f8a0.jpeg",
     "static/media/time-bg.png": "/Frontend-Showdown/static/media/time-bg.b253da83bfe8082fb8bb.png",
     "index.html": "/Frontend-Showdown/index.html",
-    "main.db3e643a.css.map": "/Frontend-Showdown/static/css/main.db3e643a.css.map",
-    "main.8dcf06c1.js.map": "/Frontend-Showdown/static/js/main.8dcf06c1.js.map"
+    "main.57795a9f.css.map": "/Frontend-Showdown/static/css/main.57795a9f.css.map",
+    "main.d7d11eb3.js.map": "/Frontend-Showdown/static/js/main.d7d11eb3.js.map"
   },
   "entrypoints": [
-    "static/css/main.db3e643a.css",
-    "static/js/main.8dcf06c1.js"
+    "static/css/main.57795a9f.css",
+    "static/js/main.d7d11eb3.js"
   ]
 }
