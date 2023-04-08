@@ -1,0 +1,20 @@
+#footer {
+  position: relative;
+  min-height: 40vh;
+  z-index: 20;
+  background: url(../assets//time-bg.png);
+  > .container {
+    > .fs-container {
+      width: 450px;
+      > a > img {
+        width: 100px;
+      }
+    }
+    > .cxi-container {
+      width: 450px;
+      > a > img {
+        width: 200px;
+      }
+    }
+  }
+}

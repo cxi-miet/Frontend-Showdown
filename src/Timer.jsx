@@ -1,12 +1,12 @@
 import React from "react";
 import "./styles/register.scss";
 function Timer(props) {
-  
+
   return (
     <div className="text-white" id="timer">
-      <div className="timer-container flex flex-col gap-5 justify-center items-center ">
+      <div className="timer-container flex flex-col justify-center items-center ">
         <h2 className="text-white timer-heading bg-transparent uppercase">{props.timerHeading}</h2>
-          <div className="timer flex justify-center items-center gap-10">
+          <div className="timer flex justify-center items-center">
             <div className="Days">
               <p>{props.timerDays}</p>
               <small>Days</small>

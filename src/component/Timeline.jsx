@@ -7,7 +7,7 @@ function Timeline() {
       className="flex items-center justify-center min-h-screen flex-col"
       id="Timeline"
     >
-      <h1 className="timeline-heading text-4xl text-white bg-transparent">
+      <h1 className="timeline-heading text-white bg-transparent">
         Your journey through Frontend Showdown
       </h1>
       <section class="timeline-section bg-transparent">
@@ -65,8 +65,7 @@ function Timeline() {
             <div class="timeline-content bg-transparent">
               <h3 className="bg-transparent">Final Result Declaration</h3>
               <p className="bg-transparent">
-                Results will be announced with the final leaderboard that will
-                be declared.
+                Results will be announced with the final leaderboard soon.
               </p>
             </div>
           </div>

@@ -1,8 +1,6 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+import React from "react";
 import "../styles/rules.scss";
+import RulesCard from "./RulesCard";
 
 function Rules() {
   return (
@@ -10,118 +8,35 @@ function Rules() {
       className="flex items-center justify-center min-h-screen flex-col gap-10 p-10"
       id="Rules"
     >
-      <h1 className="text-white bg-transparent text-5xl z-10">
+      <h1 className="text-white bg-transparent md:text-5xl text-4xl z-10 text-center">
         Rules and Regulation
       </h1>
-      <h1 className="text-white bg-transparent text-5xl z-10">Round 1</h1>
+      <h1 className="text-white bg-transparent md:text-5xl text-4xl z-10">Round 1</h1>
 
-      <div class="container bg-transparent z-10">
-        <div class="ag-courses_item bg-transparent">
-          <div href="#" class="ag-courses-item_link bg-transparent">
-            <div class="ag-courses-item_bg"></div>
-            <div class="ag-courses-item_title bg-transparent">
-              You are allowed to use HTML,CSS and JavaScript according to your
-              convinience.
-            </div>
-          </div>
-        </div>
-        <div class="ag-courses_item bg-transparent">
-          <div href="#" class="ag-courses-item_link bg-transparent">
-            <div class="ag-courses-item_bg"></div>
-            <div class="ag-courses-item_title bg-transparent">
-              Use of any framework and libraries are prohibited.
-            </div>
-          </div>
-        </div>
-        <div class="ag-courses_item bg-transparent">
-          <div href="#" class="ag-courses-item_link bg-transparent">
-            <div class="ag-courses-item_bg"></div>
-            <div class="ag-courses-item_title bg-transparent">
-              Any external resources ( images, cdn links & text) are NOT
-              allowed.
-            </div>
-          </div>
-        </div>
-        <div class="ag-courses_item bg-transparent">
-          <div href="#" class="ag-courses-item_link bg-transparent">
-            <div class="ag-courses-item_bg"></div>
-            <div class="ag-courses-item_title bg-transparent">
-              Duplicate and copied work may lead to eliminations.
-            </div>
-          </div>
-        </div>
-        <div class="ag-courses_item bg-transparent">
-          <div href="#" class="ag-courses-item_link bg-transparent">
-            <div class="ag-courses-item_bg"></div>
-            <div class="ag-courses-item_title bg-transparent">
-              AI generated content/code are prohibited.
-            </div>
-          </div>
-        </div>
-        <div class="ag-courses_item bg-transparent">
-          <div href="#" class="ag-courses-item_link bg-transparent">
-            <div class="ag-courses-item_bg"></div>
-            <div class="ag-courses-item_title bg-transparent">
-              Submissions must be done in given interval of time and follow all
-              given instructions.
-            </div>
-          </div>
-        </div>
-      </div>
-      <h1 className="text-white bg-transparent text-5xl z-10">Round 2</h1>
+      <RulesCard
+        rule1="You are allowed to use HTML,CSS and JavaScript according to your
+      convinience."
+        rule2="Use of any framework and libraries are prohibited."
+        rule3="Any external resources ( images, cdn links & text) are NOT
+      allowed."
+        rule4="Duplicate and copied work may lead to eliminations."
+        rule5="AI generated code/contents are prohibited."
+        rule6="Submissions must be done in given interval of time and follow all
+      given instructions."
+      />
 
-      <div class="container bg-transparent z-10">
-        <div class="ag-courses_item bg-transparent">
-          <div href="#" class="ag-courses-item_link bg-transparent">
-            <div class="ag-courses-item_bg"></div>
-            <div class="ag-courses-item_title bg-transparent">
-              You are allowed to use HTML,CSS and JavaScript according to your
-              convinience.
-            </div>
-          </div>
-        </div>
-        <div class="ag-courses_item bg-transparent">
-          <div href="#" class="ag-courses-item_link bg-transparent">
-            <div class="ag-courses-item_bg"></div>
-            <div class="ag-courses-item_title bg-transparent">
-              Use of any framework and libraries are allowed.
-            </div>
-          </div>
-        </div>
-        <div class="ag-courses_item bg-transparent">
-          <div href="#" class="ag-courses-item_link bg-transparent">
-            <div class="ag-courses-item_bg"></div>
-            <div class="ag-courses-item_title bg-transparent">
-              Any external resources ( images, cdn links & text) are allowed.
-            </div>
-          </div>
-        </div>
-        <div class="ag-courses_item bg-transparent">
-          <div href="#" class="ag-courses-item_link bg-transparent">
-            <div class="ag-courses-item_bg"></div>
-            <div class="ag-courses-item_title bg-transparent">
-              Submissions must be done in given interval of time and follow all
-              given instructions.
-            </div>
-          </div>
-        </div>
-        <div class="ag-courses_item bg-transparent">
-          <div href="#" class="ag-courses-item_link bg-transparent">
-            <div class="ag-courses-item_bg"></div>
-            <div class="ag-courses-item_title bg-transparent">
-              AI generated content/code are prohibited.
-            </div>
-          </div>
-        </div>
-        <div class="ag-courses_item bg-transparent">
-          <div href="#" class="ag-courses-item_link bg-transparent">
-            <div class="ag-courses-item_bg"></div>
-            <div class="ag-courses-item_title bg-transparent">
-            Duplicate and copied work may lead to eliminations.
-            </div>
-          </div>
-        </div>
-      </div>
+      <h1 className="text-white bg-transparent md:text-5xl text-4xl z-10">Round 2</h1>
+      <RulesCard
+        rule1="You are allowed to use HTML,CSS and JavaScript according to your
+        convenience."
+        rule2="Use of any framework and libraries are allowed."
+        rule3="Any external resources ( images link, cdn links & text) are
+        allowed."
+        rule4="Submissions must be done in given interval of time and follow all
+        given instructions."
+        rule5="AI generated code/contents are prohibited."
+        rule6="Duplicate and copied work may lead to eliminations."
+      />
     </div>
   );
 }
