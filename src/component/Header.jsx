@@ -1,9 +1,8 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
-import AOS from "aos";
 
 import "../styles/header.scss";
-import "aos/dist/aos.css";
+
 
 import figma from "../assets/figma-logo.png";
 import html from "../assets/html-logo.png";
@@ -12,7 +11,6 @@ import js from "../assets/javascript-logo.png";
 import image from "../assets/header-img.png";
 
 function Header() {
-  AOS.init();
   return (
     <div className="flex justify-center items-center text-white" id="header">
       <div className="header-container relative flex justify-center items-center flex-wrap">

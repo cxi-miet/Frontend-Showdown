@@ -8,10 +8,24 @@ function Rules() {
       className="flex items-center justify-center min-h-screen flex-col gap-10 p-10"
       id="Rules"
     >
-      <h1 className="text-white bg-transparent md:text-5xl text-4xl z-10 text-center">
+      <h1
+        className="text-white bg-transparent md:text-5xl text-4xl z-10 text-center"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         Rules and Regulation
       </h1>
-      <h1 className="text-white bg-transparent md:text-5xl text-4xl z-10">Round 1</h1>
+      <h1
+        className="text-white bg-transparent md:text-5xl text-4xl z-10"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        Round 1
+      </h1>
 
       <RulesCard
         rule1="You are allowed to use HTML,CSS and JavaScript according to your
@@ -25,7 +39,15 @@ function Rules() {
       given instructions."
       />
 
-      <h1 className="text-white bg-transparent md:text-5xl text-4xl z-10">Round 2</h1>
+      <h1
+        className="text-white bg-transparent md:text-5xl text-4xl z-10"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        Round 2
+      </h1>
       <RulesCard
         rule1="You are allowed to use HTML,CSS and JavaScript according to your
         convenience."

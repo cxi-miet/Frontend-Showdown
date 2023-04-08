@@ -1,23 +1,53 @@
 import React from "react";
+
 import "../styles/timeline.scss";
 
 function Timeline() {
   return (
     <div
-      className="flex items-center justify-center min-h-screen flex-col"
+      className="flex items-center justify-center min-h-screen flex-col sm:p-5"
       id="Timeline"
     >
-      <h1 className="timeline-heading text-white bg-transparent">
+      <h1
+        className="timeline-heading text-white bg-transparent"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         Your journey through Frontend Showdown
       </h1>
-      <section class="timeline-section bg-transparent">
-        <div class="timeline-items bg-transparent">
-          <div class="timeline-item bg-transparent">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date bg-transparent">
+      <section className="timeline-section bg-transparent">
+        <div
+          className="timeline-items bg-transparent"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <div className="timeline-item bg-transparent">
+            <div
+              className="timeline-dot"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            ></div>
+            <div
+              className="timeline-date bg-transparent"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               7 April 2023 - 21 April 2023
             </div>
-            <div class="timeline-content bg-transparent">
+            <div
+              className="timeline-content bg-transparent"
+              data-aos="flip-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <h3 className="bg-transparent">Entering Showdown</h3>
               <p className="bg-transparent">
                 Enter Frontend Showdown, one of biggest competitive contest by
@@ -25,10 +55,30 @@ function Timeline() {
               </p>
             </div>
           </div>
-          <div class="timeline-item bg-transparent">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date bg-transparent">23 April 2023</div>
-            <div class="timeline-content bg-transparent">
+          <div className="timeline-item bg-transparent overflow-hidden">
+            <div
+              className="timeline-dot"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            ></div>
+            <div
+              className="timeline-date bg-transparent"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
+              23 April 2023
+            </div>
+            <div
+              className="timeline-content bg-transparent"
+              data-aos="flip-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <h3 className="bg-transparent">Phase 1</h3>
               <p className="bg-transparent">
                 Participate in Frontend Showdown on 23 April, design and code a
@@ -36,10 +86,30 @@ function Timeline() {
               </p>
             </div>
           </div>
-          <div class="timeline-item bg-transparent">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date bg-transparent">27 April 2023</div>
-            <div class="timeline-content bg-transparent">
+          <div className="timeline-item bg-transparent">
+            <div
+              className="timeline-dot"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            ></div>
+            <div
+              className="timeline-date bg-transparent"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
+              27 April 2023
+            </div>
+            <div
+              className="timeline-content bg-transparent"
+              data-aos="flip-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <h3 className="bg-transparent">Result Declaration: Phase 1</h3>
               <p className="bg-transparent">
                 Announcement of shortlisted participants will be done for phase
@@ -47,10 +117,30 @@ function Timeline() {
               </p>
             </div>
           </div>
-          <div class="timeline-item bg-transparent">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date bg-transparent">29 April 2023</div>
-            <div class="timeline-content bg-transparent">
+          <div className="timeline-item bg-transparent">
+            <div
+              className="timeline-dot"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            ></div>
+            <div
+              className="timeline-date bg-transparent"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
+              29 April 2023
+            </div>
+            <div
+              className="timeline-content bg-transparent"
+              data-aos="flip-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <h3 className="bg-transparent">Phase 2</h3>
               <p className="bg-transparent">
                 Phase 2 will start on Saturday, 29 April at 6:00 pm sharp and
@@ -59,10 +149,30 @@ function Timeline() {
               </p>
             </div>
           </div>
-          <div class="timeline-item bg-transparent">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date bg-transparent">Soon After Phase 2</div>
-            <div class="timeline-content bg-transparent">
+          <div className="timeline-item bg-transparent">
+            <div
+              className="timeline-dot"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            ></div>
+            <div
+              className="timeline-date bg-transparent"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
+              Soon After Phase 2
+            </div>
+            <div
+              className="timeline-content bg-transparent"
+              data-aos="flip-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <h3 className="bg-transparent">Final Result Declaration</h3>
               <p className="bg-transparent">
                 Results will be announced with the final leaderboard soon.

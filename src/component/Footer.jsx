@@ -6,11 +6,17 @@ import cxilogo from "../assets/cxi_logo.png";
 function Footer() {
   return (
     <div
-      className=" w-full flex justify-evenly items-center flex-col bg-transparent gap-10 pb-10"
+      className=" w-full flex justify-evenly items-center flex-col bg-transparent  pb-1"
       id="footer"
     >
       <div className="container bg-transparent flex justify-evenly items-center flex-wrap gap-10">
-        <div className="bg-transparent text-white flex flex-col items-center fs-container  text-center p-10">
+        <div
+          className="bg-transparent text-white flex flex-col items-center fs-container  text-center p-10"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <a href="http://" className="bg-transparent">
             <img src={logo} className="bg-transparent" alt="Fs" />
           </a>
@@ -20,7 +26,13 @@ function Footer() {
             showcase your skills and grow with us.
           </p>
         </div>
-        <div className="bg-transparent text-white flex flex-col items-center cxi-container  text-center gap-1 p-10">
+        <div
+          className="bg-transparent text-white flex flex-col items-center cxi-container  text-center gap-1 p-10"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <a href="https://cxi-miet.github.io/" className="bg-transparent">
             <img src={cxilogo} className="bg-transparent" alt="Fs" />
           </a>
@@ -37,7 +49,13 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-transparent text-white flex flex-col items-center gap-10 text-container text-center p-10">
+      <div
+        className="bg-transparent text-white flex flex-col items-center gap-10 text-container text-center p-10"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <h1 className="text-3xl text-white bg-transparent">
           © {new Date().getFullYear()}{" "}
           <a

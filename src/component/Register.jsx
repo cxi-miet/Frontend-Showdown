@@ -8,9 +8,8 @@ function Register() {
   const [timerMinutes, setTimerMinutes] = useState();
   const [timerSeconds, setTimerSeconds] = useState();
   const [timerHeading, setTimerHeading] = useState();
-  
   // const [link, setLink] = useState("#");
-  const todayDate = new Date().getTime();
+  let todayDate = new Date().getTime();
   const registerEnd = new Date("21 April 2023 24:00:00").getTime();
   // const round1TimeStart = new Date("8 April 2023 7:55:00").getTime();
   // const round1TimeEnd = new Date("8 April 2023 7:46:00").getTime();
@@ -38,8 +37,8 @@ function Register() {
   //     console.log("Invalid");
   //   }
   // }, []);
-
-  const timer = () => {
+  let timer = setInterval(() => {
+    const todayDate = new Date().getTime();
     let distance = countDate - todayDate;
     var d = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hrs = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -49,16 +48,11 @@ function Register() {
     setTimerHours(hrs);
     setTimerMinutes(min);
     setTimerSeconds(sec);
-    // if (distance > 0) {
-    //   // window.location.reload(false);
-    // }
-  };
+  }, 1000);
 
-  setInterval(timer, 1000);
-
-  useEffect(()=>{
+  useEffect(() => {
     setTimerHeading("Registration Close in");
-  },[]);
+  }, []);
 
   return (
     <div
@@ -72,7 +66,10 @@ function Register() {
         timerSeconds={timerSeconds}
         timerHeading={timerHeading}
       />
-      <RegisterBtn name="Register now" link={"#"} />
+      <RegisterBtn
+        name="Register now"
+        link={"#"}
+      />
     </div>
   );
 }

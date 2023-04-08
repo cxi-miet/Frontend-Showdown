@@ -4,14 +4,20 @@ import "../styles/register.scss";
 
 function RegisterBtn(props) {
   return (
-    <button id="btn">
-        <span className="bg-transparent">
-          <HashLink className="bg-transparent" to={props.link}>
+    <button
+      id="btn"
+      data-aos="zoom-in"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
+      <span className="bg-transparent">
+        <HashLink className="bg-transparent" to={props.link}>
           {props.name}
-          </HashLink>
-        </span>
-        <i></i>
-      </button>
+        </HashLink>
+      </span>
+      <i></i>
+    </button>
   );
 }
 

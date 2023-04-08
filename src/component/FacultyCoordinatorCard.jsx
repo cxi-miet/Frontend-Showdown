@@ -7,7 +7,14 @@ function FacultyCoordinatorCard(props) {
     "animation-delay": delay,
   };
   return (
-    <div className="team_card_container bg-transparent" style={animationdelay}>
+    <div
+      className="team_card_container bg-transparent"
+      style={animationdelay}
+      data-aos="zoom-in"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
       <div className="team_card bg-transparent">
         <div className="team_content bg-transparent">
           <div className="imgbox bg-transparent">
