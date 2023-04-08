@@ -1,59 +1,96 @@
-import React from "react";
+import React, { useState } from "react";
+import FaqIteam from "./FaqIteam";
+
 import "../styles/faq.scss";
-import "../faq";
+import { propTypesIndex } from "@material-tailwind/react/types/components/select";
 
 function Faq() {
+  const [open, setOpen] = useState(false);
+  const toggle = (index) => {
+    if (open == index) {
+      return setOpen(null);
+    }
+    setOpen(index);
+  };
+  const faqData = [
+    {
+      question: "Do i have to pay for registration?",
+      answer:
+        "NO. There is no registration fee. Just click on Register Now button ( or [click here] ) to register. ",
+      space: false,
+    },
+    {
+      question: "What is the task in competition?",
+      answer:
+        "You have to prepare webpage(s) focusing on frontend following the given instructions and submit it by the deadline positively.",
+      space: false,
+    },
+    {
+      question: "Can i team up with other participants?",
+      answer: "NO. FrontEnd ShowDown is a solo participation contest.",
+      space: false,
+    },
+    {
+      question: "What are the selection criteria ?",
+      point1:
+        "> Any incomplete or duplicate submissions will result in elimination. Elimination(s) may also occur in case of failing/attempt to breach instructions .",
+      point2: "> No elimination is the only criteria for clearing ROUND 1.",
+      point3:
+        "> Winning ROUND 2 means winning the competition. Selection of winners will be done on different parameters (including effectiveness, good Ui/Ux , responsive tendency, code structuring etc.) and will be declared soon after the ROUND 2.",
+
+      space: true,
+    },
+    {
+      question: "What externals sources can I use ?",
+      point1:
+        "> For ROUND 1 , you are NOT allowed to use any external resources ( including any framework , images, links, pre-processors etc. ). Resources and instructions will be provided , ready to download and use.",
+      point2:
+        "> For ROUND 2 , you can use resources of your own choice(s), other than the provided resources. ",
+      space: true,
+    },
+    {
+      question: "How do i submit my project ?",
+      answer:
+        "Submission form link will be provided in WhatsApp Group along with the resources. Fill out form and upload your work there within deadline , hit submit and you are all done.",
+      space: false,
+    },
+    {
+      question: "When will the prize distribution and certifications be done?",
+      answer:
+        "Prize distribution and certifications will be done along with winner announcement within few days after completion of ROUND 2.",
+      space: false,
+    },
+  ];
   return (
     <div
-      className="flex justify-center items-center min-h-screen w-full flex-col"
+      className="flex justify-center items-center bg-transparent flex-col"
       id="faq"
     >
-      <h1 className="text-4xl text-white bg-transparent">
-        Frequently Asked Questions
+      <h1
+        className="text-white bg-transparent"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        Frequently Asked Question
       </h1>
-      <div class="container">
-        <div class="wrapper">
-          <button class="toggle">
-            What is the return policy?
-            <i class="fas fa-plus icon"></i>
-          </button>
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
-            </p>
-          </div>
-        </div>
-        <div class="wrapper">
-          <button class="toggle">
-            How do I apply the coupon?
-            <i class="fas fa-plus icon"></i>
-          </button>
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              error doloremque, quibusdam qui necessitatibus autem aperiam
-              reprehenderit? Ipsum maiores dolore inventore ea. Accusantium fuga
-              eius laboriosam iusto blanditiis doloremque ullam?
-            </p>
-          </div>
-        </div>
-        <div class="wrapper">
-          <button class="toggle">
-            How do I become a member?
-            <i class="fas fa-plus icon"></i>
-          </button>
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae consectetur officiis labore commodi sunt ex praesentium
-              dolor magnam asperiores reiciendis. Minus magnam nesciunt aliquid
-              eos ipsam sequi recusandae quos incidunt.
-            </p>
-          </div>
-        </div>
+      <div className="flex justify-center items-center bg-transparent flex-col">
+        {faqData.map((data, index) => {
+          return (
+            <FaqIteam
+              key={index}
+              open={index === open}
+              question={data.question}
+              answer={data.answer}
+              point1={data.point1}
+              point2={data.point2}
+              point3={data.point3}
+              space={data.space}
+              toggle={() => toggle(index)}
+            />
+          );
+        })}
       </div>
     </div>
   );

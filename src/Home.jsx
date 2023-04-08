@@ -4,7 +4,7 @@ import Timeline from "./component/Timeline";
 import Prizes from "./component/Prizes";
 import Rules from "./component/Rules";
 import AboutUs from "./component/AboutUs";
-// import Faq from "./component/Faq";
+import Faq from "./component/Faq";
 import Register from "./component/Register";
 import AOS from "aos";
 
@@ -20,7 +20,7 @@ function Home() {
       <Rules />
       <Register />
       <AboutUs />
-      {/* <Faq/> */}
+      <Faq/>
     </div>
   );
 }
