@@ -1,45 +1,26 @@
 import React, { useEffect, useState } from "react";
 import "../styles/register.scss";
 import Timer from "../Timer";
-import RegisterBtn from "./RegisterBtn";
+import RegisterSectionBtn from "./RegisterSectionBtn";
 function Register() {
   const [timerDays, setTimerDays] = useState();
   const [timerHours, setTimerHours] = useState();
   const [timerMinutes, setTimerMinutes] = useState();
   const [timerSeconds, setTimerSeconds] = useState();
   const [timerHeading, setTimerHeading] = useState();
+  const [btnName, setBtnName] = useState();
+  const [link, setLink] = useState("#");
+  const [target, setTarget] = useState();
+  let [countDate, setCount] = useState();
+
   const formLink = "https://forms.gle/LxFegbzy3fHB45nJ7";
+  const fileLink = "hhh";
+  const registerEnd = new Date("21 April 2023 24:00:00").getTime();
+  const round1TimeStart = new Date("23 April 2023 11:00:00").getTime();
+  const round1TimeEnd = new Date("23 April 2023 17:00:00").getTime();
+  const round2TimeStart = new Date("29 April 2023 18:00:00").getTime();
+  const round2TimeEnd = new Date("30 April 2023 18:00:00").getTime();
 
-  // const [link, setLink] = useState("#");
-  let todayDate = new Date().getTime();
-  const registerEnd = new Date("9 April 2023 19:18:00").getTime();
-  const round1TimeStart = new Date("9 April 2023 20:55:00").getTime();
-  const round1TimeEnd = new Date("9 April 2023 21:46:00").getTime();
-  const round2TimeStart = new Date("9 April 2023 23:35:00").getTime();
-  const round2TimeEnd = new Date("9 April 2023 24:36:00").getTime();
-  let countDate = registerEnd;
-
-  useEffect(() => {
-    if (todayDate < registerEnd) {
-      setTimerHeading("Registration Close in");
-      countDate = registerEnd;
-    } else if (registerEnd < todayDate < round1TimeStart) {
-      setTimerHeading("Phase 1 Start in");
-      countDate = round1TimeStart;
-    } else if (todayDate < round1TimeStart) {
-      setTimerHeading("Phase 1 End in");
-      countDate = round1TimeEnd;
-    } else if (todayDate > registerEnd < round2TimeStart) {
-      setTimerHeading("Phase 2 Start in");
-      countDate = round2TimeStart;
-    } else if (todayDate > round2TimeStart < round2TimeEnd) {
-      setTimerHeading("Phase 2 End in");
-      countDate = round2TimeEnd;
-    } else {
-      console.log("Invalid");
-    }
-  }, []);
-  
   let timer = setInterval(() => {
     const todayDate = new Date().getTime();
     let distance = countDate - todayDate;
@@ -51,12 +32,31 @@ function Register() {
     setTimerHours(hrs);
     setTimerMinutes(min);
     setTimerSeconds(sec);
-
+    if (todayDate < registerEnd) {
+      setTimerHeading("Registration Close in");
+      setCount(registerEnd);
+      setLink(formLink);
+      setBtnName("Register Now");
+      setTarget("_blank");
+    } else if (registerEnd < todayDate && todayDate < round1TimeStart) {
+      setTimerHeading("Phase 1 Start in");
+      setCount(round1TimeStart);
+      setBtnName("Registration End");
+    } else if (todayDate < round1TimeStart) {
+      setTimerHeading("Phase 1 End in");
+      setCount(round1TimeEnd);
+      setLink(fileLink);
+      setBtnName("Download Files");
+    } else if (registerEnd < todayDate && todayDate < round2TimeStart) {
+      setTimerHeading("Phase 2 Start in");
+      setCount(round2TimeStart);
+    } else if (round2TimeStart < todayDate && todayDate < round2TimeEnd) {
+      setTimerHeading("Phase 2 End in");
+      setCount(round2TimeEnd);
+    } else {
+      console.log("Invalid");
+    }
   }, 1000);
-
-  useEffect(() => {
-    setTimerHeading("Registration Close in");
-  }, []);
 
   return (
     <div
@@ -70,7 +70,11 @@ function Register() {
         timerSeconds={timerSeconds}
         timerHeading={timerHeading}
       />
-      <RegisterBtn name="Register now" link={formLink} target="_blank" />
+      <RegisterSectionBtn
+        name={btnName}
+        link={link}
+        target={target}
+      />
     </div>
   );
 }
