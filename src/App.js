@@ -4,12 +4,12 @@ import Navbar from "./component/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import NavbarMenu from "./component/NavbarMenu";
 
-function App() {
 
+
+function App() {
   return (
     <Router basename="Frontend-Showdown">
       <Navbar />
-      
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

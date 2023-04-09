@@ -12,6 +12,7 @@ import "aos/dist/aos.css";
 
 function Home() {
   AOS.init();
+  
   return (
     <div>
       <Header />
@@ -19,8 +20,8 @@ function Home() {
       <Prizes />
       <Rules />
       <Register />
-      <AboutUs />
       <Faq/>
+      <AboutUs />
     </div>
   );
 }

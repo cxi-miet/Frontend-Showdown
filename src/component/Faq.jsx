@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import FaqIteam from "./FaqIteam";
 
 import "../styles/faq.scss";
-import { propTypesIndex } from "@material-tailwind/react/types/components/select";
 
 function Faq() {
   const [open, setOpen] = useState(false);
@@ -16,58 +15,54 @@ function Faq() {
     {
       question: "Do i have to pay for registration?",
       answer:
-        "NO. There is no registration fee. Just click on Register Now button ( or [click here] ) to register. ",
+        "NO. There is no registration fee. Just click on Register Now button to register. ",
       space: false,
     },
     {
       question: "What is the task in competition?",
       answer:
         "You have to prepare webpage(s) focusing on frontend following the given instructions and submit it by the deadline positively.",
-      space: false,
+    
     },
     {
       question: "Can i team up with other participants?",
       answer: "NO. FrontEnd ShowDown is a solo participation contest.",
-      space: false,
     },
     {
       question: "What are the selection criteria ?",
       point1:
-        "> Any incomplete or duplicate submissions will result in elimination. Elimination(s) may also occur in case of failing/attempt to breach instructions .",
-      point2: "> No elimination is the only criteria for clearing ROUND 1.",
+        "Any incomplete or duplicate submissions will result in elimination. Elimination(s) may also occur in case of failing/attempt to breach instructions .",
+      point2: "No elimination is the only criteria for clearing ROUND 1.",
       point3:
-        "> Winning ROUND 2 means winning the competition. Selection of winners will be done on different parameters (including effectiveness, good Ui/Ux , responsive tendency, code structuring etc.) and will be declared soon after the ROUND 2.",
+        "Winning ROUND 2 means winning the competition. Selection of winners will be done on different parameters (including effectiveness, good Ui/Ux , responsive tendency, code structuring etc.) and will be declared soon after the ROUND 2.",
 
-      space: true,
     },
     {
       question: "What externals sources can I use ?",
       point1:
-        "> For ROUND 1 , you are NOT allowed to use any external resources ( including any framework , images, links, pre-processors etc. ). Resources and instructions will be provided , ready to download and use.",
+        "For ROUND 1 , you are NOT allowed to use any external resources ( including any framework , images, links, pre-processors etc. ). Resources and instructions will be provided , ready to download and use.",
       point2:
-        "> For ROUND 2 , you can use resources of your own choice(s), other than the provided resources. ",
-      space: true,
+        "For ROUND 2 , you can use resources of your own choice(s), other than the provided resources. ",
     },
     {
       question: "How do i submit my project ?",
       answer:
         "Submission form link will be provided in WhatsApp Group along with the resources. Fill out form and upload your work there within deadline , hit submit and you are all done.",
-      space: false,
+      
     },
     {
       question: "When will the prize distribution and certifications be done?",
       answer:
         "Prize distribution and certifications will be done along with winner announcement within few days after completion of ROUND 2.",
-      space: false,
     },
   ];
   return (
     <div
-      className="flex justify-center items-center bg-transparent flex-col"
-      id="faq"
+      className="flex justify-center items-center bg-transparent flex-col py-[20px]"
+      id="FAQ"
     >
       <h1
-        className="text-white bg-transparent"
+        className="text-white bg-transparent text-center"
         data-aos="zoom-in"
         data-aos-delay="200"
         data-aos-duration="1000"
@@ -86,7 +81,6 @@ function Faq() {
               point1={data.point1}
               point2={data.point2}
               point3={data.point3}
-              space={data.space}
               toggle={() => toggle(index)}
             />
           );

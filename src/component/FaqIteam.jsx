@@ -3,16 +3,15 @@ import React from "react";
 import { Collapse } from "react-collapse";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
-function FaqIteam({
-  open,
-  toggle,
-  question,
-  answer,
-  point1,
-  point2,
-  point3,
-  space,
-}) {
+function FaqIteam({ open, toggle, question, answer, point1, point2, point3 }) {
+  const style={
+    "list-style-type": "disc",
+  }
+  const list= (data)=>{
+    return (
+      <li className="bg-transparent">{data}</li>
+    )
+  }
   return (
     <div
       className="pt-[10px] bg-transparent text-white"
@@ -39,12 +38,12 @@ function FaqIteam({
       <Collapse isOpened={open}>
         <div className="bg-transparent text-left px-10">
           {answer}
-          <br className={`${space ? "block" : "hidden"}`} />
-          {point1}
-          <br className={`${space ? "block" : "hidden"}`} />
-          {point2}
-          <br className={`${space ? "block" : "hidden"}`} />
-          {point3}{" "}
+          <ul className={"bg-transparent"} style={style}>
+          {point1 ? list(point1): null}
+          {point2 ? list(point2): null}
+          {point3 ? list(point3): null}
+
+          </ul>
         </div>
       </Collapse>
     </div>

@@ -6,7 +6,7 @@ import { BsStars } from "react-icons/bs";
 function Prizes() {
   return (
     <div
-      className="flex items-center justify-evenly min-h-screen flex-wrap gap-10"
+      className="flex items-center justify-evenly min-h-screen flex-wrap gap-10 py-[40px] px-[20px]"
       id="Prizes"
     >
       <div

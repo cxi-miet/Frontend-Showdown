@@ -8,6 +8,8 @@ function Register() {
   const [timerMinutes, setTimerMinutes] = useState();
   const [timerSeconds, setTimerSeconds] = useState();
   const [timerHeading, setTimerHeading] = useState();
+  const formLink = "https://forms.gle/LxFegbzy3fHB45nJ7";
+
   // const [link, setLink] = useState("#");
   let todayDate = new Date().getTime();
   const registerEnd = new Date("21 April 2023 24:00:00").getTime();
@@ -66,10 +68,7 @@ function Register() {
         timerSeconds={timerSeconds}
         timerHeading={timerHeading}
       />
-      <RegisterBtn
-        name="Register now"
-        link={"#"}
-      />
+      <RegisterBtn name="Register now" link={formLink} target="_blank" />
     </div>
   );
 }

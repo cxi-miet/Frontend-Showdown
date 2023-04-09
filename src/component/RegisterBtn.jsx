@@ -1,9 +1,9 @@
 import React from "react";
-import { HashLink } from "react-router-hash-link";
 import "../styles/register.scss";
 
 function RegisterBtn(props) {
   return (
+    <a className="bg-transparent" href={props.link} target={props.target}>
     <button
       id="btn"
       data-aos="zoom-in"
@@ -12,12 +12,11 @@ function RegisterBtn(props) {
       data-aos-easing="ease-in-out"
     >
       <span className="bg-transparent">
-        <HashLink className="bg-transparent" to={props.link}>
-          {props.name}
-        </HashLink>
+          {props.name} 
       </span>
       <i></i>
     </button>
+        </a>
   );
 }
 

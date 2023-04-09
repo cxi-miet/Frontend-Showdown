@@ -11,7 +11,7 @@ import "../styles/aboutus.scss";
 function AboutUs() {
   return (
     <div
-      className="flex items-center justify-center min-h-screen flex-col gap-10"
+      className="flex items-center justify-center min-h-screen flex-col gap-10 py-[50px]"
       id="About-us"
     >
       <h1
@@ -23,7 +23,7 @@ function AboutUs() {
       >
         Meet our Team
       </h1>
-      <div className="bg-transparent w-full flex justify-center items-center flex-col gap-10">
+      <div className="bg-transparent w-full flex justify-center items-center flex-col gap-10 py-[20px]">
         <h1
           className="text-3xl text-white bg-transparent w-full text-center z-10 uppercase"
           data-aos="zoom-in"
@@ -31,7 +31,7 @@ function AboutUs() {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          Faculty Coordinator
+          Faculty Coordinators
         </h1>
         <div className="flex justify-center items-center bg-transparent flex-wrap gap-10">
           <FacultyCoordinatorCard
@@ -48,7 +48,7 @@ function AboutUs() {
           />
         </div>
       </div>
-      <div className="bg-transparent w-full flex justify-center items-center flex-col gap-10">
+      <div className="bg-transparent w-full flex justify-center items-center flex-col gap-10 py-[20px]">
         <h1
           className="text-3xl text-white bg-transparent w-full text-center z-10 uppercase"
           data-aos="zoom-in"
@@ -56,7 +56,7 @@ function AboutUs() {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          Student Coordinator
+          Student Coordinators
         </h1>
         <div className="flex justify-center items-center bg-transparent flex-wrap gap-10">
           <CoordinatorCard

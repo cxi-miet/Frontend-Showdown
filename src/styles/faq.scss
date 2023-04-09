@@ -1,10 +1,11 @@
-#faq {
+#FAQ {
   position: relative;
   width: 100%;
   min-height: 70vh;
   padding: 20px;
   // background-image: url(../assets/time-bg.png);
   background: linear-gradient(-65deg, #004cbd, #000);
+  z-index: 20;
   > h1 {
     font-size: 2.5rem;
   }
@@ -29,8 +30,31 @@
     display: flex;
     align-items: center;
     border-radius: 0 0 16px 16px;
-    padding:15px 0 20px 0;
+    padding: 15px 0 20px 0;
     min-height: fit-content;
     background: linear-gradient(-65deg, #004cbd, #000);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #question-container {
+    #question {
+      height: 70px;
+      padding: 15px;
+      >p{
+        font-size: 0.8rem;
+      }
+    }
+    .ReactCollapse--content {
+      display: flex;
+      align-items: center;
+      border-radius: 0 0 16px 16px;
+      padding: 15px 0 20px 0;
+      min-height: fit-content;
+      background: linear-gradient(-65deg, #004cbd, #000);
+      >div >ul >li{
+        font-size: 0.8rem;
+      }
+    }
   }
 }

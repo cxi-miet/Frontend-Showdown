@@ -1,5 +1,5 @@
 import React from "react";
-import { HashLink } from "react-router-hash-link";
+import RegisterBtn from "./RegisterBtn";
 
 import "../styles/header.scss";
 
@@ -28,14 +28,7 @@ function Header() {
             showcase your skills and grow with us.
           </p>
           <div className="header-btn bg-transparent mt-3">
-            <button>
-              <span className="bg-transparent">
-                <HashLink className="bg-transparent" to={"/#products"}>
-                  Register Now
-                </HashLink>
-              </span>
-              <i></i>
-            </button>
+          <RegisterBtn name="Register Now" link="#Register" />
           </div>
         </div>
         <div

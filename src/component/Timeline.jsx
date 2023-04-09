@@ -5,7 +5,7 @@ import "../styles/timeline.scss";
 function Timeline() {
   return (
     <div
-      className="flex items-center justify-center min-h-screen flex-col sm:p-5"
+      className="flex items-center justify-center min-h-screen flex-col py-[40px] px-[20px]"
       id="Timeline"
     >
       <h1

@@ -1,7 +1,7 @@
 #Prizes {
   position: relative;
   width: 100%;
-  min-height: 70vh;
+  min-height: 100vh;
   background: url(../assets/time-bg.png);
   overflow: hidden;
   background: linear-gradient(
@@ -9,9 +9,7 @@
     rgba(0, 0, 0, 0.93) 11.2%,
     rgba(0, 76, 189, 0.7) 78.9%
   );
-  padding-bottom: 20px;
   color: #fff;
-  padding: 0 20px;
   > .prizes-text {
     width: 600px;
     >h1{
@@ -135,7 +133,6 @@
       >p{
         width: 90%;
         font-size: 1.3rem;
-        // padding: 0 10px;
       }
     }
     .canvas {

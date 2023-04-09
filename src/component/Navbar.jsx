@@ -3,17 +3,14 @@ import { HashLink } from "react-router-hash-link";
 import { BiMenuAltRight } from "react-icons/bi";
 import { RxCross2 } from "react-icons/rx";
 import RegisterBtn from "./RegisterBtn";
-import AOS from "aos";
+
+// import "../navbar"
 
 import logo from "../assets/logo.png";
-import NavbarMenu from "./NavbarMenu";
 
 import "../styles/navbar.scss";
 
-import "aos/dist/aos.css";
-
 function Navbar() {
-  AOS.init();
   const [showMenu, setShowMenu] = useState(false);
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
@@ -25,10 +22,12 @@ function Navbar() {
   };
   window.addEventListener("scroll", changeNavbarColor);
 
+  
+
   return (
     <div className="flex justify-center">
       <div
-        className={`w-full fixed top-0 left-0 z-50 bg-transparent flex justify-between items-center  py-1 ${
+        className={`w-full fixed top-0 left-0 z-50 bg-transparent flex justify-between items-center py-1 ${
           colorChange || showMenu ? "navScroll" : null
         }`}
         id="navbar"
@@ -90,11 +89,65 @@ function Navbar() {
               FAQ
             </HashLink>
           </li>
-          <RegisterBtn name="Register Now" />
+          <RegisterBtn name="Register Now" link="#Register" />
         </ul>
       </div>
       <div className="fixed top-28 z-40 w-full">
-        <NavbarMenu position={showMenu} />
+        <div className="sticky lg:hidden bottom-0 ">
+          <ul
+            className={`flex flex-col rounded-br-[300px] absolute ${
+              showMenu ? "top-[13px]" : "top-[-880px]"
+            } transition-all duration-1000 ease-in-out w-full px-10 pb-20 bg-transparent gap-10`}
+            id="navbarTab"
+          >
+            <li className="text-xl mt-4 bg-transparent">
+              <HashLink
+                className="text-white bg-transparent"
+                to={"/#Prizes"}
+                onClick={() => setShowMenu(!showMenu)}
+              >
+                Prizes
+              </HashLink>
+            </li>
+            <li className="text-xl bg-transparent">
+              <HashLink
+                className="text-white bg-transparent"
+                to={"/#Rules"}
+                onClick={() => setShowMenu(!showMenu)}
+              >
+                Rules
+              </HashLink>
+            </li>
+            <li className="text-xl bg-transparent">
+              <HashLink
+                className="text-white bg-transparent"
+                to={"/#About-us"}
+                onClick={() => setShowMenu(!showMenu)}
+              >
+                About us
+              </HashLink>
+            </li>
+            <li className="text-xl bg-transparent">
+              <HashLink
+                className="text-white bg-transparent"
+                to={"/#Timeline"}
+                onClick={() => setShowMenu(!showMenu)}
+              >
+                Timeline
+              </HashLink>
+            </li>
+            <li className="text-xl bg-transparent">
+              <HashLink
+                className="text-white bg-transparent"
+                to={"/#FAQ"}
+                onClick={() => setShowMenu(!showMenu)}
+              >
+                FAQ
+              </HashLink>
+            </li>
+            <RegisterBtn name="Register Now" link="#Register"/>
+          </ul>
+        </div>
       </div>
     </div>
   );
