@@ -12,33 +12,34 @@ function Register() {
 
   // const [link, setLink] = useState("#");
   let todayDate = new Date().getTime();
-  const registerEnd = new Date("21 April 2023 24:00:00").getTime();
-  // const round1TimeStart = new Date("8 April 2023 7:55:00").getTime();
-  // const round1TimeEnd = new Date("8 April 2023 7:46:00").getTime();
-  // const round2TimeStart = new Date("27 April 2023 23:35:00").getTime();
-  // const round2TimeEnd = new Date("28 April 2023 23:36:00").getTime();
+  const registerEnd = new Date("9 April 2023 19:18:00").getTime();
+  const round1TimeStart = new Date("9 April 2023 20:55:00").getTime();
+  const round1TimeEnd = new Date("9 April 2023 21:46:00").getTime();
+  const round2TimeStart = new Date("9 April 2023 23:35:00").getTime();
+  const round2TimeEnd = new Date("9 April 2023 24:36:00").getTime();
   let countDate = registerEnd;
 
-  // useEffect(() => {
-  //   if (todayDate < registerEnd) {
-  //     setTimerHeading("Registration Close in");
-  //     // countDate = registerEnd;
-  //   } else if (registerEnd < todayDate < round1TimeStart) {
-  //     setTimerHeading("Phase 1 Start in");
-  //     countDate = round1TimeStart;
-  //   } else if (todayDate < round1TimeStart) {
-  //     setTimerHeading("Phase 1 End in");
-  //     // countDate = round1TimeEnd;
-  //   } else if (todayDate > registerEnd < round2TimeStart) {
-  //     setTimerHeading("Phase 2 Start in");
-  //     // countDate = round2TimeStart;
-  //   } else if (todayDate > round2TimeStart < round2TimeEnd) {
-  //     setTimerHeading("Phase 2 End in");
-  //     // countDate = round2TimeEnd;
-  //   } else {
-  //     console.log("Invalid");
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (todayDate < registerEnd) {
+      setTimerHeading("Registration Close in");
+      countDate = registerEnd;
+    } else if (registerEnd < todayDate < round1TimeStart) {
+      setTimerHeading("Phase 1 Start in");
+      countDate = round1TimeStart;
+    } else if (todayDate < round1TimeStart) {
+      setTimerHeading("Phase 1 End in");
+      countDate = round1TimeEnd;
+    } else if (todayDate > registerEnd < round2TimeStart) {
+      setTimerHeading("Phase 2 Start in");
+      countDate = round2TimeStart;
+    } else if (todayDate > round2TimeStart < round2TimeEnd) {
+      setTimerHeading("Phase 2 End in");
+      countDate = round2TimeEnd;
+    } else {
+      console.log("Invalid");
+    }
+  }, []);
+  
   let timer = setInterval(() => {
     const todayDate = new Date().getTime();
     let distance = countDate - todayDate;
@@ -50,6 +51,7 @@ function Register() {
     setTimerHours(hrs);
     setTimerMinutes(min);
     setTimerSeconds(sec);
+
   }, 1000);
 
   useEffect(() => {
