@@ -7,6 +7,9 @@ function RegisterBtn(props) {
     background:
       "linear-gradient(90deg,rgba(0, 108, 233, 0.5592830882352942) 0%,rgba(134, 148, 229, 1) 100%)",
   });
+  const [linkStyle, setLinkStyle] = useState({
+    "pointer-events": "auto",
+  });
   const timer = setInterval(() => {
     let todayDate = new Date().getTime();
     const registerEnd = new Date("21 April 2023 24:00:00").getTime();
@@ -15,9 +18,11 @@ function RegisterBtn(props) {
     if (registerEnd < todayDate && todayDate < round1TimeStart) {
       setBtnStyle({
         "background-color": "grey",
-        "pointer-events": "none",
       });
       setBtnName("Registration Closed");
+      setLinkStyle({
+        "pointer-events": "none",
+      })
     } else if (round1TimeStart < todayDate && todayDate < round1TimeEnd) {
       setBtnStyle({
         background:
@@ -27,26 +32,33 @@ function RegisterBtn(props) {
     } else if (round1TimeEnd < todayDate) {
       setBtnStyle({
         "background-color": "grey",
-        "pointer-events": "none",
       });
+      setLinkStyle({
+        "pointer-events": "none",
+      })
       setBtnName("Registration Closed");
     }
   }, 1000);
 
   return (
-    <button
-      id="btn"
-      data-aos="zoom-in"
-      data-aos-delay="100"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
-      style={btnStyle}
+    <a
+      className="bg-transparent"
+      href={props.link}
+      target={props.target}
+      style={linkStyle}
     >
-      <a className="bg-transparent" href={props.link} target={props.target}>
+      <button
+        id="btn"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        style={btnStyle}
+      >
         <span className="bg-transparent">{btnName}</span>
-      </a>
-      <i></i>
-    </button>
+        <i></i>
+      </button>
+    </a>
   );
 }
 

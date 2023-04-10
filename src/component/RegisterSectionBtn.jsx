@@ -26,15 +26,15 @@ function RegisterSectionBtn(props) {
 
   return (
     <div id="RegisterSectionBtn" className="bg-transparent">
+        <a href={props.link} className="bg-transparent" target={props.target}>
       <button className="bg-transparent" style={btnStyle}>
         <span></span>
         <span></span>
         <span></span>
-        <a href={props.link} className="bg-transparent" target={props.target}>
           {props.name}
-        </a>
         <span></span>
       </button>
+        </a>
     </div>
   );
 }

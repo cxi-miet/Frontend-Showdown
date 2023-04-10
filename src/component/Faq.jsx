@@ -16,17 +16,15 @@ function Faq() {
       question: "Do i have to pay for registration?",
       answer:
         "NO. There is no registration fee. Just click on Register Now button to register. ",
-      space: false,
     },
     {
       question: "What is the task in competition?",
       answer:
         "You have to prepare webpage(s) focusing on frontend following the given instructions and submit it by the deadline positively.",
-    
     },
     {
       question: "Can i team up with other participants?",
-      answer: "NO. FrontEnd ShowDown is a solo participation contest.",
+      answer: "NO. Frontend Showdown is a solo participation contest.",
     },
     {
       question: "What are the selection criteria ?",
@@ -35,20 +33,18 @@ function Faq() {
       point2: "No elimination is the only criteria for clearing ROUND 1.",
       point3:
         "Winning ROUND 2 means winning the competition. Selection of winners will be done on different parameters (including effectiveness, good Ui/Ux , responsive tendency, code structuring etc.) and will be declared soon after the ROUND 2.",
-
     },
     {
       question: "What externals sources can I use ?",
       point1:
-        "For ROUND 1 , you are NOT allowed to use any external resources ( including any framework , images, links, pre-processors etc. ). Resources and instructions will be provided , ready to download and use.",
+        "For ROUND 1 , you are NOT allowed to use any external resources ( including any framework , images, cdn links, pre-processors etc. ). Resources and instructions will be provided , ready to download and use.",
       point2:
         "For ROUND 2 , you can use resources of your own choice(s), other than the provided resources. ",
     },
     {
       question: "How do i submit my project ?",
       answer:
-        "Submission form link will be provided in WhatsApp Group along with the resources. Fill out form and upload your work there within deadline , hit submit and you are all done.",
-      
+        "Submission form link will be provided in WhatsApp Group. Fill out form and upload your work there within deadline , hit submit and you are all done.",
     },
     {
       question: "When will the prize distribution and certifications be done?",

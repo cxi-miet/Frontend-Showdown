@@ -60,7 +60,7 @@ function Footer() {
           © {new Date().getFullYear()}{" "}
           <a
             href="https://cxi-miet.github.io/"
-            className="underline bg-transparent"
+            className="underline bg-transparent text-blue-500"
           >
             CXI
           </a>
