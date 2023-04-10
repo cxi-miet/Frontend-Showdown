@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/Frontend-Showdown/static/css/main.d4d51c75.css",
-    "main.js": "/Frontend-Showdown/static/js/main.6d4277bc.js",
-    "static/media/Aryan.jpg": "/Frontend-Showdown/static/media/Aryan.e4610fc857af2dbf2279.jpg",
+    "main.css": "/Frontend-Showdown/static/css/main.adcb20f7.css",
+    "main.js": "/Frontend-Showdown/static/js/main.b821a58d.js",
+    "static/media/amanjot.jpg": "/Frontend-Showdown/static/media/amanjot.f94d503918d5ac91b14f.jpg",
     "static/media/Dev.png": "/Frontend-Showdown/static/media/Dev.6bb6309b33f13e9cb03a.png",
+    "static/media/Aryan.jpg": "/Frontend-Showdown/static/media/Aryan.0aab88afe4d7911c36ae.jpg",
     "static/media/header-img.png": "/Frontend-Showdown/static/media/header-img.a167f63e506a1518672f.png",
-    "static/media/Muskesh-sir.jpeg": "/Frontend-Showdown/static/media/Muskesh-sir.9f281420ae0d63384adb.jpeg",
     "static/media/html-logo.png": "/Frontend-Showdown/static/media/html-logo.095847db38d432708f86.png",
     "static/media/figma-logo.png": "/Frontend-Showdown/static/media/figma-logo.0d2fa9428b644ce3f4c2.png",
     "static/media/javascript-logo.png": "/Frontend-Showdown/static/media/javascript-logo.189b1d8da1362c0d4e52.png",
@@ -13,12 +13,14 @@
     "static/media/cxi_logo.png": "/Frontend-Showdown/static/media/cxi_logo.ccad44dd63351c380319.png",
     "static/media/Shashwat-sir.jpeg": "/Frontend-Showdown/static/media/Shashwat-sir.97371ee981e401a7f8a0.jpeg",
     "static/media/time-bg.png": "/Frontend-Showdown/static/media/time-bg.b253da83bfe8082fb8bb.png",
+    "static/media/Muskesh-sir.jpeg": "/Frontend-Showdown/static/media/Muskesh-sir.9aec7283d43f4137d8c6.jpeg",
+    "static/media/deepsikha.jpeg": "/Frontend-Showdown/static/media/deepsikha.c28f3ad833c9bb5d9a18.jpeg",
     "index.html": "/Frontend-Showdown/index.html",
-    "main.d4d51c75.css.map": "/Frontend-Showdown/static/css/main.d4d51c75.css.map",
-    "main.6d4277bc.js.map": "/Frontend-Showdown/static/js/main.6d4277bc.js.map"
+    "main.adcb20f7.css.map": "/Frontend-Showdown/static/css/main.adcb20f7.css.map",
+    "main.b821a58d.js.map": "/Frontend-Showdown/static/js/main.b821a58d.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4d51c75.css",
-    "static/js/main.6d4277bc.js"
+    "static/css/main.adcb20f7.css",
+    "static/js/main.b821a58d.js"
   ]
 }
