@@ -1,6 +1,8 @@
 import React from "react";
 import Dev from "../assets/Dev.png";
 import aryan from "../assets/Aryan.jpg";
+import amanjot from "../assets/amanjot.jpg";
+import DEEPSHIKHA from "../assets/deepsikha.jpeg";
 import muskeshSir from "../assets/Muskesh-sir.jpeg";
 import shashwatSir from "../assets/Shashwat-sir.jpeg";
 import CoordinatorCard from "./CoordinatorCard";
@@ -80,6 +82,37 @@ function AboutUs() {
             instagram="https://instagram.com/_undying_code?igshid=ZDdkNTZiNTM="
             github="https://github.com/undying-code"
             delay="1s"
+          />
+        </div>
+      </div>
+      <div className="bg-transparent w-full flex justify-center items-center flex-col gap-10 py-[20px]">
+        <h1
+          className="text-3xl text-white bg-transparent w-full text-center z-10 uppercase"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          Managing Team
+        </h1>
+        <div className="flex justify-center items-center bg-transparent flex-wrap gap-10">
+          <CoordinatorCard
+            name="DEEPSHIKHA PANWAR"
+            course="B.Tech"
+            branch="CSIT"
+            year="2nd Year"
+            img={DEEPSHIKHA}
+            delay="0s"
+            hide={true}
+          />
+          <CoordinatorCard
+            name="Amanjot Singh"
+            course="B.Tech"
+            branch="CSE"
+            year="2nd Year"
+            img={amanjot}
+            delay="1s"
+            hide={true}
           />
         </div>
       </div>
