@@ -14,7 +14,7 @@ function Register() {
   let [countDate, setCount] = useState();
 
   const formLink = "https://forms.gle/LxFegbzy3fHB45nJ7";
-  const fileLink = "hhh";
+  const fileLink = "#";
   const registerEnd = new Date("21 April 2023 24:00:00").getTime();
   const round1TimeStart = new Date("23 April 2023 11:00:00").getTime();
   const round1TimeEnd = new Date("23 April 2023 17:00:00").getTime();
@@ -41,8 +41,8 @@ function Register() {
     } else if (registerEnd < todayDate && todayDate < round1TimeStart) {
       setTimerHeading("Phase 1 Start in");
       setCount(round1TimeStart);
-      setBtnName("Registration End");
-    } else if (todayDate < round1TimeStart) {
+      setBtnName("Registration Closed");
+    } else if (round1TimeStart < todayDate && todayDate < round1TimeEnd) {
       setTimerHeading("Phase 1 End in");
       setCount(round1TimeEnd);
       setLink(fileLink);
@@ -50,11 +50,20 @@ function Register() {
     } else if (registerEnd < todayDate && todayDate < round2TimeStart) {
       setTimerHeading("Phase 2 Start in");
       setCount(round2TimeStart);
+      setBtnName("Registration Closed");
     } else if (round2TimeStart < todayDate && todayDate < round2TimeEnd) {
       setTimerHeading("Phase 2 End in");
       setCount(round2TimeEnd);
+      setBtnName("Registration Closed");
     } else {
+      setTimerHeading("Registration Closed");
       console.log("Invalid");
+      clearInterval(timer);
+      setTimerDays("00");
+    setTimerHours("00");
+    setTimerMinutes("00");
+    setTimerSeconds("00");
+      setBtnName("Registration Closed");
     }
   }, 1000);
 

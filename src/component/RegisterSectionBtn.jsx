@@ -11,11 +11,12 @@ function RegisterSectionBtn(props) {
     if (registerEnd < todayDate && todayDate < round1TimeStart) {
       setBtnStyle({
         "pointer-events": "none",
+        "background-color": "grey",
       });
     } else if (round1TimeStart < todayDate && todayDate < round1TimeEnd) {
       setBtnStyle({
         "pointer-events": "auto",
-       });
+      });
     } else if (round1TimeEnd < todayDate) {
       setBtnStyle({
         "background-color": "grey",
@@ -26,15 +27,15 @@ function RegisterSectionBtn(props) {
 
   return (
     <div id="RegisterSectionBtn" className="bg-transparent">
-        <a href={props.link} className="bg-transparent" target={props.target}>
-      <button className="bg-transparent" style={btnStyle}>
-        <span></span>
-        <span></span>
-        <span></span>
+      <a href={props.link} className="bg-transparent" target={props.target}>
+        <button className="bg-transparent" style={btnStyle}>
+          <span></span>
+          <span></span>
+          <span></span>
           {props.name}
-        <span></span>
-      </button>
-        </a>
+          <span></span>
+        </button>
+      </a>
     </div>
   );
 }

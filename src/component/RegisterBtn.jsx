@@ -22,7 +22,7 @@ function RegisterBtn(props) {
       setBtnName("Registration Closed");
       setLinkStyle({
         "pointer-events": "none",
-      })
+      });
     } else if (round1TimeStart < todayDate && todayDate < round1TimeEnd) {
       setBtnStyle({
         background:
@@ -30,12 +30,13 @@ function RegisterBtn(props) {
       });
       setBtnName("Download Files");
     } else if (round1TimeEnd < todayDate) {
+      clearInterval(timer);
       setBtnStyle({
         "background-color": "grey",
       });
       setLinkStyle({
         "pointer-events": "none",
-      })
+      });
       setBtnName("Registration Closed");
     }
   }, 1000);
