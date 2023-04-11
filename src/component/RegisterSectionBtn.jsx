@@ -18,6 +18,7 @@ function RegisterSectionBtn(props) {
         "pointer-events": "auto",
       });
     } else if (round1TimeEnd < todayDate) {
+      clearInterval(timer);
       setBtnStyle({
         "background-color": "grey",
         "pointer-events": "none",
