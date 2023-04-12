@@ -82,7 +82,7 @@ function Timeline() {
               <h3 className="bg-transparent">Phase 1</h3>
               <p className="bg-transparent">
                 Participate in Frontend Showdown on 23 April, design and code a
-                landing page in 6 hours.
+                landing page in 6 hours.(11:00:00 AM)
               </p>
             </div>
           </div>
