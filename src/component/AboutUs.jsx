@@ -3,6 +3,7 @@ import Dev from "../assets/Dev.png";
 import aryan from "../assets/Aryan.jpg";
 import amanjot from "../assets/amanjot.jpg";
 import DEEPSHIKHA from "../assets/deepsikha.jpeg";
+import dhruv from "../assets/dhruv.jpeg";
 import muskeshSir from "../assets/Muskesh-sir.jpeg";
 import shashwatSir from "../assets/Shashwat-sir.jpeg";
 import CoordinatorCard from "./CoordinatorCard";
@@ -106,12 +107,23 @@ function AboutUs() {
             hide={true}
           />
           <CoordinatorCard
+            name="Dhruv"
+            course="B.Tech"
+            branch="CSE"
+            year="2nd Year"
+            img={dhruv}
+            delay="1s"
+            linkedin="http://linkedin.com/in/bitwisedhruv"
+            instagram="http://instagram.com/bitwisedhruv"
+            github="http://github.com/codemonk643"
+          />
+          <CoordinatorCard
             name="Amanjot Singh"
             course="B.Tech"
             branch="CSE"
             year="2nd Year"
             img={amanjot}
-            delay="1s"
+            delay="1.5s"
             hide={true}
           />
         </div>

@@ -5,7 +5,6 @@
 * {
   font-family: "Jost", sans-serif;
   margin: 0;
-  background-color: #1a1a1a;
   scroll-behavior: smooth;
   scroll-padding-top: var(--scroll-padding-top,100px);
 }
