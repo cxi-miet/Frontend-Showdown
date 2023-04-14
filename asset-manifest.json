@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/Frontend-Showdown/static/css/main.adcb20f7.css",
-    "main.js": "/Frontend-Showdown/static/js/main.cdfbbf6c.js",
+    "main.css": "/Frontend-Showdown/static/css/main.55d51b17.css",
+    "main.js": "/Frontend-Showdown/static/js/main.dce766cc.js",
     "static/media/amanjot.jpg": "/Frontend-Showdown/static/media/amanjot.f94d503918d5ac91b14f.jpg",
     "static/media/Dev.png": "/Frontend-Showdown/static/media/Dev.6bb6309b33f13e9cb03a.png",
     "static/media/Aryan.jpg": "/Frontend-Showdown/static/media/Aryan.0aab88afe4d7911c36ae.jpg",
+    "static/media/dhruv.jpeg": "/Frontend-Showdown/static/media/dhruv.d9d048c10aa51f15bd7c.jpeg",
     "static/media/header-img.png": "/Frontend-Showdown/static/media/header-img.a167f63e506a1518672f.png",
     "static/media/html-logo.png": "/Frontend-Showdown/static/media/html-logo.095847db38d432708f86.png",
     "static/media/figma-logo.png": "/Frontend-Showdown/static/media/figma-logo.0d2fa9428b644ce3f4c2.png",
@@ -16,11 +17,11 @@
     "static/media/Muskesh-sir.jpeg": "/Frontend-Showdown/static/media/Muskesh-sir.9aec7283d43f4137d8c6.jpeg",
     "static/media/deepsikha.jpeg": "/Frontend-Showdown/static/media/deepsikha.c28f3ad833c9bb5d9a18.jpeg",
     "index.html": "/Frontend-Showdown/index.html",
-    "main.adcb20f7.css.map": "/Frontend-Showdown/static/css/main.adcb20f7.css.map",
-    "main.cdfbbf6c.js.map": "/Frontend-Showdown/static/js/main.cdfbbf6c.js.map"
+    "main.55d51b17.css.map": "/Frontend-Showdown/static/css/main.55d51b17.css.map",
+    "main.dce766cc.js.map": "/Frontend-Showdown/static/js/main.dce766cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.adcb20f7.css",
-    "static/js/main.cdfbbf6c.js"
+    "static/css/main.55d51b17.css",
+    "static/js/main.dce766cc.js"
   ]
 }
