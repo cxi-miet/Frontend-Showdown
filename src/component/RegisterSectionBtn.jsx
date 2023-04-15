@@ -27,7 +27,13 @@ function RegisterSectionBtn(props) {
   }, 1000);
 
   return (
-    <div id="RegisterSectionBtn" className="bg-transparent">
+    <div
+      id="RegisterSectionBtn"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+     className="bg-transparent"
+    >
       <a href={props.link} className="bg-transparent" target={props.target}>
         <button className="bg-transparent" style={btnStyle}>
           <span></span>
