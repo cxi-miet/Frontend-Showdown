@@ -11,8 +11,7 @@ function Timeline() {
       <h1
         className="timeline-heading text-white bg-transparent"
         data-aos="zoom-in"
-        data-aos-delay="100"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
       >
         Your journey through Frontend Showdown
@@ -21,22 +20,20 @@ function Timeline() {
         <div
           className="timeline-items bg-transparent"
           data-aos="zoom-in"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
         >
           <div className="timeline-item bg-transparent">
             <div
               className="timeline-dot"
               data-aos="zoom-in"
-              data-aos-delay="100"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
             ></div>
             <div
               className="timeline-date bg-transparent"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
             >
               7 April 2023 - 21 April 2023
@@ -44,8 +41,7 @@ function Timeline() {
             <div
               className="timeline-content bg-transparent"
               data-aos="flip-up"
-              data-aos-delay="100"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
             >
               <h3 className="bg-transparent">Entering Showdown</h3>
@@ -59,15 +55,13 @@ function Timeline() {
             <div
               className="timeline-dot"
               data-aos="zoom-in"
-              data-aos-delay="100"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
             ></div>
             <div
               className="timeline-date bg-transparent"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
             >
               23 April 2023
@@ -75,8 +69,7 @@ function Timeline() {
             <div
               className="timeline-content bg-transparent"
               data-aos="flip-up"
-              data-aos-delay="100"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
             >
               <h3 className="bg-transparent">Phase 1</h3>
@@ -90,15 +83,13 @@ function Timeline() {
             <div
               className="timeline-dot"
               data-aos="zoom-in"
-              data-aos-delay="100"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
             ></div>
             <div
               className="timeline-date bg-transparent"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
             >
               27 April 2023
@@ -106,8 +97,7 @@ function Timeline() {
             <div
               className="timeline-content bg-transparent"
               data-aos="flip-up"
-              data-aos-delay="100"
-              data-aos-duration="1000"
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
             >
               <h3 className="bg-transparent">Result Declaration: Phase 1</h3>
@@ -121,15 +111,15 @@ function Timeline() {
             <div
               className="timeline-dot"
               data-aos="zoom-in"
-              data-aos-delay="100"
-              data-aos-duration="1000"
+              
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
             ></div>
             <div
               className="timeline-date bg-transparent"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-duration="1000"
+              
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
             >
               29 April 2023
@@ -137,8 +127,8 @@ function Timeline() {
             <div
               className="timeline-content bg-transparent"
               data-aos="flip-up"
-              data-aos-delay="100"
-              data-aos-duration="1000"
+              
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
             >
               <h3 className="bg-transparent">Phase 2</h3>
@@ -153,15 +143,15 @@ function Timeline() {
             <div
               className="timeline-dot"
               data-aos="zoom-in"
-              data-aos-delay="100"
-              data-aos-duration="1000"
+              
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
             ></div>
             <div
               className="timeline-date bg-transparent"
               data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-duration="1000"
+              
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
             >
               Soon After Phase 2
@@ -169,8 +159,8 @@ function Timeline() {
             <div
               className="timeline-content bg-transparent"
               data-aos="flip-up"
-              data-aos-delay="100"
-              data-aos-duration="1000"
+              
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
             >
               <h3 className="bg-transparent">Final Result Declaration</h3>

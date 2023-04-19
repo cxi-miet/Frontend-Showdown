@@ -58,13 +58,12 @@ function Faq() {
       id="FAQ"
     >
       <h1
-        className="text-white bg-transparent text-center"
+        className="text-white bg-transparent text-center mb-1"
         data-aos="zoom-in"
-        data-aos-delay="200"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
       >
-        Frequently Asked Question
+        Frequently Asked Questions
       </h1>
       <div className="flex justify-center items-center bg-transparent flex-col">
         {faqData.map((data, index) => {

@@ -12,8 +12,7 @@ function Prizes() {
       <div
         className="prizes-text bg-transparent text-whitez-10 text-center flex flex-col gap-5 lg:text-left"
         data-aos="zoom-in"
-        data-aos-delay="100"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
       >
         <h1 className="bg-transparent">Prizes</h1>
@@ -27,8 +26,7 @@ function Prizes() {
         <div
           className="flip-card bg-transparent"
           data-aos="zoom-in"
-          data-aos-delay="100"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
         >
           <div className="flip-card-content bg-transparent">

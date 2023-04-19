@@ -20,8 +20,7 @@ function Rules() {
       <h1
         className="text-white bg-transparent md:text-5xl text-4xl z-10"
         data-aos="zoom-in"
-        data-aos-delay="100"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
       >
         Round 1
@@ -42,8 +41,7 @@ function Rules() {
       <h1
         className="text-white bg-transparent md:text-5xl text-4xl z-10"
         data-aos="zoom-in"
-        data-aos-delay="100"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
       >
         Round 2

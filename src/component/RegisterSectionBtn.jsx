@@ -30,7 +30,7 @@ function RegisterSectionBtn(props) {
     <div
       id="RegisterSectionBtn"
       data-aos="zoom-in"
-      data-aos-duration="1000"
+      data-aos-duration="500"
       data-aos-easing="ease-in-out"
      className="bg-transparent"
     >

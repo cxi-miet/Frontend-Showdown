@@ -33,7 +33,7 @@ function Register() {
     setTimerMinutes(min);
     setTimerSeconds(sec);
     if (todayDate < registerEnd) {
-      setTimerHeading("Registration Close in");
+      setTimerHeading("Registrations Close in");
       setCount(registerEnd);
       setLink(formLink);
       setBtnName("Register Now");

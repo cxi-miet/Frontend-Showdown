@@ -20,8 +20,7 @@ function AboutUs() {
       <h1
         className="text-3xl text-white bg-transparent w-full text-center z-10"
         data-aos="zoom-in"
-        data-aos-delay="100"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
       >
         Meet our Team
@@ -30,8 +29,7 @@ function AboutUs() {
         <h1
           className="text-3xl text-white bg-transparent w-full text-center z-10 uppercase"
           data-aos="zoom-in"
-          data-aos-delay="100"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
         >
           Faculty Coordinators
@@ -55,8 +53,7 @@ function AboutUs() {
         <h1
           className="text-3xl text-white bg-transparent w-full text-center z-10 uppercase"
           data-aos="zoom-in"
-          data-aos-delay="100"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
         >
           Student Coordinators
@@ -90,8 +87,7 @@ function AboutUs() {
         <h1
           className="text-3xl text-white bg-transparent w-full text-center z-10 uppercase"
           data-aos="zoom-in"
-          data-aos-delay="100"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
         >
           Managing Team

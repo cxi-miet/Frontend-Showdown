@@ -7,8 +7,7 @@ function RulesCard(props) {
       <div
         class="ag-courses_item bg-transparent"
         data-aos="zoom-in"
-        data-aos-delay="100"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
       >
         <div href="#" class="ag-courses-item_link bg-transparent">
@@ -19,8 +18,7 @@ function RulesCard(props) {
       <div
         class="ag-courses_item bg-transparent"
         data-aos="zoom-in"
-        data-aos-delay="100"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
       >
         <div href="#" class="ag-courses-item_link bg-transparent">
@@ -31,8 +29,7 @@ function RulesCard(props) {
       <div
         class="ag-courses_item bg-transparent"
         data-aos="zoom-in"
-        data-aos-delay="100"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
       >
         <div href="#" class="ag-courses-item_link bg-transparent">
@@ -43,8 +40,7 @@ function RulesCard(props) {
       <div
         class="ag-courses_item bg-transparent"
         data-aos="zoom-in"
-        data-aos-delay="100"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
       >
         <div href="#" class="ag-courses-item_link bg-transparent">
@@ -55,8 +51,7 @@ function RulesCard(props) {
       <div
         class="ag-courses_item bg-transparent"
         data-aos="zoom-in"
-        data-aos-delay="100"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
       >
         <div href="#" class="ag-courses-item_link bg-transparent">
@@ -67,8 +62,7 @@ function RulesCard(props) {
       <div
         class="ag-courses_item bg-transparent"
         data-aos="zoom-in"
-        data-aos-delay="100"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
       >
         <div href="#" class="ag-courses-item_link bg-transparent">

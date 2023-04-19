@@ -6,8 +6,7 @@ function Timer(props) {
       className="text-white z-10"
       id="timer"
       data-aos="fade-right"
-      data-aos-delay="100"
-      data-aos-duration="1000"
+      data-aos-duration="500"
       data-aos-easing="ease-in-out"
     >
       <div className="timer-container flex flex-col justify-center items-center ">

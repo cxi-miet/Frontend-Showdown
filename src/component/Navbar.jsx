@@ -4,7 +4,6 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { RxCross2 } from "react-icons/rx";
 import RegisterBtn from "./RegisterBtn";
 
-// import "../navbar"
 
 import logo from "../assets/logo.png";
 
@@ -47,8 +46,7 @@ function Navbar() {
           onClick={() => setShowMenu(!showMenu)}
           className="text-4xl absolute right-8 top-4 cursor-pointer bg-transparent lg:hidden text-white m-5"
           data-aos="zoom-in"
-          data-aos-delay="200"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
           {showMenu ? (
@@ -60,8 +58,7 @@ function Navbar() {
         <ul
           className="hidden lg:flex justify-center items-center gap-10 bg-transparent mr-10"
           data-aos="zoom-in"
-          data-aos-delay="100"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
           <li className="text-xl  bg-transparent">
@@ -86,7 +83,7 @@ function Navbar() {
           </li>
           <li className="text-xl bg-transparent">
             <HashLink className="text-white bg-transparent" to={"/#FAQ"}>
-              FAQ
+              FAQs
             </HashLink>
           </li>
           <RegisterBtn name="Register Now" link="#Register" />
@@ -142,7 +139,7 @@ function Navbar() {
                 to={"/#FAQ"}
                 onClick={() => setShowMenu(!showMenu)}
               >
-                FAQ
+                FAQs
               </HashLink>
             </li>
             <RegisterBtn name="Register Now" link="#Register"/>

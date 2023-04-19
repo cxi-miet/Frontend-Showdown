@@ -51,8 +51,7 @@ function RegisterBtn(props) {
       <button
         id="btn"
         data-aos="zoom-in"
-        data-aos-delay="100"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
         style={btnStyle}
       >

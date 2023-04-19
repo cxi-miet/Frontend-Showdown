@@ -17,8 +17,7 @@ function FaqIteam({ open, toggle, question, answer, point1, point2, point3 }) {
       className="pt-[10px] bg-transparent text-white"
       id="question-container"
       data-aos="zoom-in"
-      data-aos-delay="200"
-      data-aos-duration="1000"
+      data-aos-duration="500"
       data-aos-easing="ease-in-out"
     >
       <div
