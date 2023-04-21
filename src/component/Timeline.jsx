@@ -133,7 +133,7 @@ function Timeline() {
             >
               <h3 className="bg-transparent">Phase 2</h3>
               <p className="bg-transparent">
-                Phase 2 will start on Saturday, 29 April at 6:00 pm sharp and
+                Phase 2 will start on Saturday, 29 April at 7:00 pm sharp and
                 will be continue for next 24 hours, only shortlisted
                 participants can compete.
               </p>
