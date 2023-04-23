@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../styles/register.scss";
 import Timer from "../Timer";
 import RegisterSectionBtn from "./RegisterSectionBtn";
@@ -14,7 +14,8 @@ function Register() {
   let [countDate, setCount] = useState();
 
   const formLink = "https://forms.gle/LxFegbzy3fHB45nJ7";
-  const fileLink = "#";
+  const fileLink =
+    "https://drive.google.com/drive/folders/1aD3qwOI8YJfkPFlKQuKYqCh2KaZp6EI8?usp=sharing";
   const registerEnd = new Date("21 April 2023 24:00:00").getTime();
   const round1TimeStart = new Date("23 April 2023 11:00:00").getTime();
   const round1TimeEnd = new Date("23 April 2023 17:00:00").getTime();
@@ -50,19 +51,22 @@ function Register() {
     } else if (registerEnd < todayDate && todayDate < round2TimeStart) {
       setTimerHeading("Phase 2 Start in");
       setCount(round2TimeStart);
+      setLink("");
       setBtnName("Registration Closed");
     } else if (round2TimeStart < todayDate && todayDate < round2TimeEnd) {
       setTimerHeading("Phase 2 End in");
       setCount(round2TimeEnd);
       setBtnName("Registration Closed");
+      setLink("");
     } else {
       setTimerHeading("Registration Closed");
       console.log("Invalid");
+      setLink("");
       clearInterval(timer);
       setTimerDays("00");
-    setTimerHours("00");
-    setTimerMinutes("00");
-    setTimerSeconds("00");
+      setTimerHours("00");
+      setTimerMinutes("00");
+      setTimerSeconds("00");
       setBtnName("Registration Closed");
     }
   }, 1000);
@@ -79,11 +83,7 @@ function Register() {
         timerSeconds={timerSeconds}
         timerHeading={timerHeading}
       />
-      <RegisterSectionBtn
-        name={btnName}
-        link={link}
-        target={target}
-      />
+      <RegisterSectionBtn name={btnName} link={link} target={target} />
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import Dev from "../assets/Dev.png";
 import aryan from "../assets/Aryan.jpg";
-// import amanjot from "../assets/amanjot.jpg";
 import DEEPSHIKHA from "../assets/deepsikha.jpeg";
 import dhruv from "../assets/dhruv.jpeg";
 import muskeshSir from "../assets/Muskesh-sir.jpeg";
