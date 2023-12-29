@@ -20,7 +20,7 @@ function Register() {
   const round1TimeStart = new Date("23 April 2023 11:00:00").getTime();
   const round1TimeEnd = new Date("23 April 2023 17:00:00").getTime();
   const round2TimeStart = new Date("29 April 2023 18:00:00").getTime();
-  const round2TimeEnd = new Date("30 April 2023 18:00:00").getTime();
+  const round2TimeEnd = new Date("22 july 2023 18:00:00").getTime();
 
   let timer = setInterval(() => {
     const todayDate = new Date().getTime();
